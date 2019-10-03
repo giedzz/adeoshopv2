@@ -5,7 +5,7 @@
         @foreach($products as $value)
         <div class="col-md-4 mb-2">
             <div class="card" style="width: 18rem;">
-                <img src="{{ asset("public/images/$value->image") }}" class="card-img-top" alt="...">
+                <img src="{{ secure_asset("public/images/$value->image") }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ $value->name }}</h5>
                     <h6 class="card-title">{{ $value->sku }}</h6>

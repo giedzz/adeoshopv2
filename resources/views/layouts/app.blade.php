@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Adeo Shop') }}</title>
 
     <!-- Scripts -->
-    <script src="{{asset('public/js/app.js')}}" defer></script>
+    <script src="{{secure_asset('public/js/app.js')}}" defer></script>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -33,7 +33,7 @@
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{asset('public/css/app.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('public/css/app.css')}}" rel="stylesheet">
 
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
