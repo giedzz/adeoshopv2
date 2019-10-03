@@ -14,7 +14,7 @@ class CreateConfigsTable extends Migration
     public function up()
     {
         Schema::create('configs', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->decimal('tax_rate', 3,2);
             $table->boolean('tax_inclusion')->default(1);
             $table->decimal('discount_fixed', 8,2)->nullable();
