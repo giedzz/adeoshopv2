@@ -11,7 +11,7 @@
         <!-- Portfolio Item Row -->
         <div class="row">
             <div class="col-md-8">
-                <img class="img-fluid" src='{{ secure_asset("images/$product->image") }}' alt="Item picture" style="width: 100%;">
+                <img class="img-fluid" src='https://softsmart.co.za/wp-content/uploads/2018/06/image-not-found-1038x576.jpg' alt="Item picture" style="width: 100%;">
             </div>
             <div class="col-md-4">
                 <h3 class="my-3">About item</h3>
