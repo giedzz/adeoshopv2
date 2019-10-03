@@ -51,7 +51,7 @@
                                 fakeStar += '<i id="star'+counter+'" class="far fa-star" style="color:brown"></i>';
                                 counter++;
                             }
-                            if(reviews.length > 0){
+                            if(reviewCounter > 0){
                                 $('#starCount'+product.id).html(starCount + fakeStar);
                             }else{
                                 console.log(fakestar.repeat(5));
