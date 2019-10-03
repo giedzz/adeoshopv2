@@ -15,10 +15,10 @@ class CreateConfigsTable extends Migration
     {
         Schema::create('configs', function (Blueprint $table) {
             $table->increments('id');
-            $table->decimal('tax_rate', 3,2);
+            $table->decimal('tax_rate', 5,2);
             $table->boolean('tax_inclusion')->default(1);
-            $table->decimal('discount_fixed', 8,2)->nullable();
-            $table->decimal('discount_percent', 3,2)->nullable();
+            $table->decimal('discount_fixed', 10,2)->nullable();
+            $table->decimal('discount_percent', 5,2)->nullable();
             $table->boolean('discount_type')->default(1);
             $table->timestamps();
         });
