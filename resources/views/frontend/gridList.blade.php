@@ -55,7 +55,6 @@
                                 $('#starCount'+product.id).html(starCount + fakeStar);
                             }else{
                                 fakeStar = '<i id="star'+counter+'" class="far fa-star" style="color:brown"></i>';
-                                console.log(fakeStar.repeat(5));
                                 $('#starCount'+product.id).html(fakeStar.repeat(5));
                             }
                             let price = parseFloat(product.base_price);
