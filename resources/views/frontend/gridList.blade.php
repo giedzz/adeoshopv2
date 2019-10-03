@@ -54,6 +54,7 @@
                             if(reviews.length > 0){
                                 $('#starCount'+product.id).html(starCount + fakeStar);
                             }else{
+                                console.log(fakestar.repeat(5));
                                 $('#starCount'+product.id).html(fakeStar.repeat(5));
                             }
                             let price = parseFloat(product.base_price);
