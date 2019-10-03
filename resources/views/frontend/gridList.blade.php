@@ -51,7 +51,11 @@
                                 fakeStar += '<i id="star'+counter+'" class="far fa-star" style="color:brown"></i>';
                                 counter++;
                             }
-                            $('#starCount'+product.id).html(starCount + fakeStar);
+                            if(reviews.length > 0){
+                                $('#starCount'+product.id).html(starCount + fakeStar);
+                            }else{
+                                $('#starCount'+product.id).html(fakeStar.repeat(5));
+                            }
                             let price = parseFloat(product.base_price);
                             if (configData.tax_inclusion == 1) {
                                 price = price * (1 + (configData.tax_rate / 100));

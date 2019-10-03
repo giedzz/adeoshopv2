@@ -33,6 +33,7 @@ class ProductController extends Controller
     public function frontend()
     {
         $products = Product::where('status', 1)->get();
+
         return view('frontend.gridList', compact('products'));
     }
 }
