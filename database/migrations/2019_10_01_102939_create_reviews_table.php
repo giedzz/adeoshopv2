@@ -17,6 +17,7 @@ class CreateReviewsTable extends Migration
             $table->increments('id');
             $table->integer('rating');
             $table->text('review')->nullable();
+            $table->increments('fk_product');
             $table->timestamps();
         });
     }
