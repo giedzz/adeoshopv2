@@ -19,6 +19,7 @@ class CreateConfigsTable extends Migration
             $table->boolean('tax_inclusion')->default(1);
             $table->decimal('discount_fixed', 8,2)->nullable();
             $table->decimal('discount_percent', 3,2)->nullable();
+            $table->boolean('discount_type')->default(1);
             $table->timestamps();
         });
     }
